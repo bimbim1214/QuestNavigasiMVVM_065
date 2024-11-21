@@ -50,7 +50,7 @@ fun FormMahasiswa(
     var NoHPUser by remember { mutableStateOf("")}
     var selectedGenderUser by remember { mutableStateOf("")}
 
-    val datamahasiswa: MutableList<String> = mutableListOf(nama, selectedGender, alamat)
+    val datamahasiswa: MutableList<String> = mutableListOf(nama,NIM,email, selectedGender, alamat)
 
     Column (modifier = Modifier
         .fillMaxSize()
