@@ -30,6 +30,10 @@ fun DetailMahasiswaView(
         listDataMhs.forEach{item ->
             CardSection(Judul = item.first, isi = item.second)
         }
+        Button(onClick = {onBackButtonClicked() })
+        {
+            Text("kembali")
+        }
     }
 
 }
